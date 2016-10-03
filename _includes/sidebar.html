@@ -1,0 +1,32 @@
+<div class="sidebar text-center">
+    <img src="{{site.author_photo}}" class="img-circle" />
+    <div class="sidebar-item">
+        <h2> {{ site.author_name }} </h2>
+        <h4> {{ site.author_bio }} </h4>
+    </div>
+    <div class="sidebar-item text-left">
+        <ul class="list-unstyled author-social">
+            {% if site.author_twitter %}
+            <li>
+                <a href="https://twitter.com/{{site.author_twitter}}">
+                    <img src="/assets/twitter-3-24.png" alt="twitter" /> @{{site.author_twitter}}
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author_linkedin %}            
+            <li>
+                <a href="https://il.linkedin.com/in/{{site.author_linkedin}}">
+                    <img src="/assets/linkedin-3-24.png" alt="linkedin" /> {{site.author_linkedin}}
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author_github %}
+            <li>
+                <a href="https://github.com/{{site.author_github}}">
+                    <img src="/assets/github-8-24.png" alt="github" /> {{site.author_github}}
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

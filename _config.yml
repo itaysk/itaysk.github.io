@@ -1,0 +1,31 @@
+url: "http://localhost:4000"
+baseurl: ""
+permalink: "/:year/:month/:day/:title"
+title: "Itay as a Service"
+description: "Itay Shakury's blog"
+
+#author profile
+author_photo: "/assets/headshot150x150.png"
+author_name: "Itay Shakury"
+author_bio: "Technology enthusiast, Etrepreneur wannabe, Microsoft employee."
+author_twitter: "itayasaservice"
+author_linkedin: "itaysk"
+author_github:  "itaysk"
+
+# Build settings
+markdown: kramdown
+
+sass:
+    style: :compressed
+
+
+gems:
+    - jekyll-gist 
+    - jekyll-feed
+
+defaults:
+    -
+        scope: 
+            path: "_posts"
+        values:
+            layout: "post"

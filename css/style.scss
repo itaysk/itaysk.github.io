@@ -1,0 +1,88 @@
+---
+---
+
+// bootstrap overrides
+$brand-primary: #483D8B; //darkslateblue
+$headings-color: #222; //wanted to use $gray-darker but since it's declared inside _variables.scss which must be imported after this override I hard code the value.
+
+//from minima
+@import "syntax-highlighting";
+
+//bootstrap basics (must be in this order, and before others)
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/scaffolding";
+//bootstrap
+@import "bootstrap/code";
+@import "bootstrap/grid";
+@import "bootstrap/normalize";
+@import "bootstrap/responsive-embed";
+@import "bootstrap/responsive-utilities";
+@import "bootstrap/tables";
+@import "bootstrap/type";
+@import "bootstrap/utilities";
+
+/*------------ fixes for the post content ------------*/
+
+article {
+    //Since bootstrap requires `.table` class to format `<table>` elements (and I don't want to mix css in the markdown)
+    table {
+        @extend .table;
+    }
+    //make sure all post's images are responsive
+    img {
+        @extend .img-responsive;
+    }
+}
+
+// deliberately won't set $font-size-base because it makes everything go big. I want only normal text size to be larger. (TODO: how does it scale? mobile?)
+body {
+    font-size: 17px;
+}
+
+/*----------------------------------------------------*/
+
+.sidebar-item {
+    margin-bottom:20px;
+    color: $gray;
+
+    h2, h4 {
+    color: $gray;        
+    }
+
+}
+
+.author-social {
+    margin:auto; 
+    width:50%;
+
+    li {
+        padding: 3px;
+    }
+}
+
+.content {
+    border-left: #eee 1px solid;
+}
+
+.post-list {
+    .post-title {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+.page-header {
+    width:100%;
+    background-color: $brand-primary;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 0px; //don't know why this gets 40px after in the output css
+    color: white;
+
+    a {
+        color: white;
+    }
+}
+
