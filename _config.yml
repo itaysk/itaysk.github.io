@@ -1,4 +1,4 @@
-url: "http://localhost:4000"
+url: "http://blog.itaysk.com"
 baseurl: ""
 permalink: "/:year/:month/:day/:title"
 title: "Itay as a Service"
