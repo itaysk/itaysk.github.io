@@ -1,6 +1,6 @@
 ---
 title: Waiting on multiple HTTP requests with retry policy in JavaScript
-date: 2016-10-06 12:20
+date: 2016-10-06 13:50
 categories: [Techical-Howto]
 tags: [JavaScript, node.js, promise]
 ---
