@@ -2,7 +2,7 @@
 title: A practical introduction to Azure Batch
 date: 2016-10-08 13:58 
 categories: [Technical-Howto]
-tags: [Azure, Azure Batch]
+tags: [Azure, Azure Batch, python]
 ---
 
 Azure Batch, one of the possible ways to consume compute resources in Azure, is probably one of the least known ones, but is actually quite useful for scenarios of distributed parallel workloads. In this post I will introduce the basics of this service from a practical approach of just what needs to be done to get started.
