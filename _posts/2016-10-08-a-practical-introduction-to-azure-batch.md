@@ -74,6 +74,10 @@ This is the Python code that creates the required resources in Batch:
 
 The script is pretty simple to follow, and is organized in 3 sections: first we declare variables, second we create the batch objects and configure them (at this stage nothing is actually provisioned yet, we just create some objects in memory), and lastly we provision the resources. Only in the 3rd section does the client actually call the Azure Batch API.
 
+The portal offers excellent insight into the state and status of your tasks and jobs. One very handfull feature is the ability to pull the stdout, stderr from individual tasks without logging into VMs:
+
+![stdout](/images/2016-10-08-a-practical-introduction-to-azure-batch_1.png)
+
 ## Caveats
 
 Important things to know:
