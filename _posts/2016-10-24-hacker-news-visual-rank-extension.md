@@ -8,7 +8,7 @@ tags: [chrome, edge, firefox, github]
 [Hacker News](https://news.ycombinator.com) is one of my favorite sites, every idle minute I have is probably spent there. For those who don't know, It's a tech news sharing site that puts users first - users submit items, users vote on interesting items, and users discuss items (similar to reddit).
 
 I noticed that whenever I read the front page, when I skim over items, I always take note of how many points and comments each have. It's became an automated pattern for me to see what others though of that item.
-The way items are structured o the page makes it annoying to read if you care about the number of points and comments - Your eyes will jump from side to side, see for yourself
+The way items are structured on the page makes it annoying to read if you care about the number of points and comments - Your eyes will jump from side to side, see for yourself
 
 ![HN item](/images/2016-10-24-hacker-news-visual-rank-extension_1.png)
 
@@ -19,10 +19,11 @@ Here is the result:
 
 ![screenshot](/images/2016-10-24-hacker-news-visual-rank-extension_2.png)
 
-Code is on my GitHub: [https://github.com/itaysk/Hacker-News-Visual-Rank](https://github.com/itaysk/Hacker-News-Visual-Rank)
+## How to get it
 
-The extension was tested to run on Chrome, Edge, and Firefox. Find it in the appropriate store:
+Tested to run on Chrome, Edge, and Firefox. Find it in the appropriate store:
 
+- Code is on my GitHub: [https://github.com/itaysk/Hacker-News-Visual-Rank](https://github.com/itaysk/Hacker-News-Visual-Rank)
 - [Chrome store](https://chrome.google.com/webstore/detail/hacker-news-visual-rank/hnbdiaedemlcfnjpdgadhhhdmmhhlncm)
 - Edge extension support is not open for developer submissions yet.
 - Mozilla Addons (AMO) - Submitted, waiting for approval.
