@@ -21,9 +21,7 @@ Here is the result:
 
 ## How to get it
 
-Tested to run on Chrome, Edge, and Firefox. Find it in the appropriate store:
-
-- Code is on my GitHub: [https://github.com/itaysk/Hacker-News-Visual-Rank](https://github.com/itaysk/Hacker-News-Visual-Rank)
-- [Chrome store](https://chrome.google.com/webstore/detail/hacker-news-visual-rank/hnbdiaedemlcfnjpdgadhhhdmmhhlncm)
-- Edge extension support is not open for developer submissions yet.
-- Mozilla Addons (AMO) - Submitted, waiting for approval.
+- [Source code](https://github.com/itaysk/Hacker-News-Visual-Rank)
+- [Chrome](https://chrome.google.com/webstore/detail/hacker-news-visual-rank/hnbdiaedemlcfnjpdgadhhhdmmhhlncm)
+- [Firefox](https://addons.mozilla.org/addon/hacker-news-visual-rank/)
+- For Edge you can get the source and load the extention locally. Edge extension support is not open for developer submissions yet.
