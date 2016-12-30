@@ -1,9 +1,10 @@
 ---
 title: From Lenovo X1 Carbon to Lenovo X1 Yoga
-date: 2016-12-30 11:50
+date: 2016-12-30 11:59
 categories: [Technical-Howto]
 tags: [Laptop, Review]
 ---
+
 
 I have upgraded my almost 4 years old Lenovo X1 Carbon to the 2016 Lenovo X1 Yoga. Back than [I have written my thoughts on the X1 Carbon](http://blog.itaysk.com/2013/05/04/lenovo-x1-carbon-touch-review), and now I'd like to to the same for the X1 Yoga. 
 **I did not called this 'Lenovo X1 Yoga Review' because this is not a thorough review, but some of the highlights I wanted to mention.**
