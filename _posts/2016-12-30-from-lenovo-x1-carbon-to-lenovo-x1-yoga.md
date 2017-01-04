@@ -32,8 +32,6 @@ USB ports are spread nicely and spaced enough. In the X1 Carbon you had only 2 p
 When bending the screen to tablet mode, the keyboard keys sink in thei holes and lock there, making it impossible to press them (this is on top of disabling the keyboard of course).
 Keyboard is automatically lighted in dark! The last feature I would add, but it's cool nonetheless :)
 
-Speakers are better. I watch a lot of recorded courses, and this was a pain with the X1 Carbon. The Speakers here are better, they are louder which is the only thing that matters to me, but also have some Dolby technology features. If I wanted high quality sound I wouldn't count on the built in speakers anyway so I don't care for any of that, just for the boost in volume and depth of sound which makes listening to voice audio better.
-
 Touch and Stylus:
 
 I know it's not a popular opinion, but touch screen is a big deal for me. I really did used it alot with the X1 Carbon for everyday productivity work, and I think every laptop should have a touch screen today (looking at you, Apple).
