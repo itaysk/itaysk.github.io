@@ -74,7 +74,8 @@ Back in the 'Required permissions' blade click on 'Grant Permissions' and approv
 
 ## Step 2: Code
 
-As I mentioned before, I tried to keep it as general as possible and used Vanilla JS. I also tried to keep the sample as minimal as possible, just demonstrating the flow of events. This is by no means production ready code.
+As I mentioned before, I tried to keep it as general as possible and used Vanilla JS. The only dependency is ADAL.js. Get it [https://github.com/AzureAD/azure-activedirectory-library-for-js/tree/dev/dist](here). You don't need 'adal-angular' at all.  
+I also tried to keep the sample as minimal as possible, just demonstrating the flow of events. This is by no means production ready code.
 
 {% gist itaysk/66363c608b4f60fe97e08173b325080c %}
 
