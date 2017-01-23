@@ -22,15 +22,18 @@ The X1 Yoga is made from metal (Aluminum?) which makes it feel much better. It s
 Fingerprint reader is much better. The old one was replaced with a modern one (which you just touch as opposed to swipe like in the older model) that is quick and accurate. It works great with Windows Hello. It feels almost as good as the one on my iPhone.
 With the X1 Carbon I *never* used the fingerprint reader. With the X1 Yoga it has become my native login method.
 
-The Trackpad is much better. The X1 Carbon had a weird trackpad that featured some kind of semi-press, floating design. I can't really describe it in words but it was not good. Tapping was not a fluent gesture and you mostly had to press in order to register a click.
-The trackpad on the X1 Yoga is better. It's still not as good as a Mac's or Surface Book's but it's good. Another thing I really like is that two fingers tap for double click now works (the old trackpad had multi-finger detection but for some reason two finger tap did not work, perhaps it was a driver issue).
+The Trackpad is better. The X1 Carbon had a weird trackpad that featured some kind of semi-press, floating design. I can't really describe it in words but it was not good. Tapping was not a fluent gesture and you mostly had to press hard in order to register a click.  
+The trackpad on the X1 Yoga better. It also have very minor travel on tap, but it's tolerable. Not as good as a Mac's or Surface Book's but it's fine.   
+Another thing I really like is that two fingers tap for double click now works. On the other hand swipe from left to right while browsing in order to go back stopped working. I don't think it's hardware related, probably driver but I went over every single setting in the 'Synaptics Control Panel', which has tons of options, but not this one.
 
 Full sized HDMI is welcome addition, where the X1 Carbon only had Mini DP. Still no USB-C on this model though.
 
 USB ports are spread nicely and spaced enough. In the X1 Carbon you had only 2 ports, one of the was too close to the Mini DP port, making it unusable.
 
-When bending the screen to tablet mode, the keyboard keys sink in thei holes and lock there, making it impossible to press them (this is on top of disabling the keyboard of course).
+When bending the screen to tablet mode, the keyboard keys sink in the holes and lock there, making it impossible to press them (this is on top of disabling the keyboard of course).
 Keyboard is automatically lighted in dark! The last feature I would add, but it's cool nonetheless :)
+
+Although I did not get the OLED model, the screen is very nice.
 
 Touch and Stylus:
 
@@ -57,6 +60,10 @@ I don't know if that still holds, but the bazels are noticeable, surely by today
 High DPI is still half baked in Windows. This is not really an issue with the laptop, but I am only now experiencing this having upgraded to a high DPI laptop.
 
 No USB-3.
+
+Power button located in unfortunate position that made me accidently press it several times.
+
+When it tablet mode, the heat vent is directed towards the bottom, and I already mentioned this fan likes to work, so if you are lying down and resting the 'tablet' on your body, you will feel the heat coming out of it.
 
 Fn and Ctrl keys are still switched in my opinion (and every other manufacturer)... It's opposite from any other laptop meaning Ctrl is not the left most, bottom most key in the corner of the keyboard so it's not as intuitive to use.
 
