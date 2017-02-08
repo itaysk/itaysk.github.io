@@ -32,7 +32,7 @@ Queues help a role in the original code in Azure automation and now after phase 
 [System.Reflection.Assembly]::LoadFrom(".\Microsoft.WindowsAzure.Storage.dll")
 $queue = New-Object -TypeName Microsoft.WindowsAzure.Storage.Queue.CloudQueue -ArgumentList $QueueConnectionStringSasUrl
 $queueMessage = New-Object -TypeName Microsoft.WindowsAzure.Storage.Queue.CloudQueueMessage -ArgumentList $message
-$queue.AddMessage($queueMessage, $null, $delayNotificationPeriod)
+$queue.AddMessage($queueMessage)
 ```
 
 This worked and all but was not really using the full potential of Functions - enter inputs and outputs.
