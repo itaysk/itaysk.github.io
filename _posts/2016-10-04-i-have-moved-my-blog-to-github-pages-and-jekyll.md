@@ -19,7 +19,7 @@ I have had this blog on Wordpress.com for a few years now, and have been general
 
 Why GitHub Pages:
 
-- Because it's what the cool kinds are doing these days.
+- Because it's what the cool kids are doing these days.
 - Becuase GitHub is well known with developers and since this is a tech blog it makes sense.
 - Because it's free and easy.
 
@@ -34,6 +34,6 @@ Why Jekyll:
 - Because it moves rapidly and has a good community.
 - Becuase it's the only one that's natively supported with GitHub pages (they run Jekyll).
 
-I must say - I am not a Ruby guy and never has been. This was not an easy choice for me, but still I am happy with Jekyll. I even created my own theme for Jekyll which wasn't hard at all.
+I must say - I am not a Ruby guy and never have been. This was not an easy choice for me, but still I am happy with Jekyll. I even created my own theme for Jekyll which wasn't hard at all.
 
 In the next post I will document this journey from a technical perspective.
