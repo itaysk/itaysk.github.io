@@ -40,6 +40,19 @@ body {
     font-size: 17px;
 }
 
+/*-----------------------share------------------------*/
+
+.sharer {
+    a{
+        display: inline-block;
+        img {
+            height: 2em;
+        }
+    }
+    
+}
+
+
 /*----------------------------------------------------*/
 
 .sidebar-item {
@@ -86,3 +99,6 @@ body {
     }
 }
 
+footer {
+    height: 3em;
+}
