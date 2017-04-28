@@ -11,7 +11,6 @@ defaults:
         values:
             layout: "post"
 
-
 #author profile
 author_photo: "/assets/headshot150x150.png"
 author_name: "Itay Shakury"
@@ -31,5 +30,5 @@ gems:
 
 #services
 google_analytics: "UA-85195702-1"
-disqus_shortname: "itaysk"
+#disqus_shortname: "itaysk"
 
