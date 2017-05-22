@@ -1,6 +1,6 @@
 ---
 title: Using a private docker registry/repository with Marathon/Mesos
-date: 2017-05-22 119:47
+date: 2017-05-22 19:47
 categories: [Technical-Howto]
 tags: [dcos, marathon, mesos, docker, azure-container-service, azure-container-registry]
 ---
