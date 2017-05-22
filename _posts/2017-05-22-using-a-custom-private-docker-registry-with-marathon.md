@@ -1,11 +1,11 @@
 ---
-title: Using a private docker registry/repository with Marathon/Mesos
+title: Using a private docker registry/repository with Marathon
 date: 2017-05-22 19:47
 categories: [Technical-Howto]
 tags: [dcos, marathon, mesos, docker, azure-container-service, azure-container-registry]
 ---
 
-I was using DC/OS-Marathon-Mesos and needed to pull image from a private repository on Docker Hub or a custom registry like Azure Container Registry.  
+I was using DC/OS-Marathon and needed to pull image from a private repository on Docker Hub or a custom registry like Azure Container Registry.  
 
 ## TL;DR
 Follow this link: [https://mesosphere.github.io/marathon/docs/native-docker-private-registry.html](https://mesosphere.github.io/marathon/docs/native-docker-private-registry.html), but in step 2 replace the `uris` section with 
