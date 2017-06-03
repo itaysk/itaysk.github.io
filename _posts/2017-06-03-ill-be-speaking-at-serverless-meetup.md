@@ -1,5 +1,5 @@
 ---
-title: I'll be spearking at Serverless Meetup
+title: I'll be speaking at Serverless Meetup
 date: 2017-06-03 20:43
 categories: [events]
 tags: [azure-functions, serverless]
