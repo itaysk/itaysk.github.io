@@ -8,7 +8,7 @@ tags: [azure-network, ftp]
 Ever created a VM in Azure and noticed that the VM only knows about its private IP address even though it might have a public IP as well?  
 This behavior is actually by design, which might surprise people with traditional networking background.
 
-The VM in Azure should be oblivious of its public IP. The public IP is injected to traffic traveling outside the VNet by Azure. You can conceptually think of this as a transparent NAT between your VM and the Internet, translating between private and public IPs. For the sake of simplicity, I'll call this translation layer - 'Azure hidden NLB').
+The VM in Azure should be oblivious of its public IP. The public IP is injected to traffic traveling outside the VNet by Azure. You can conceptually think of this as a transparent NAT between your VM and the Internet, translating between private and public IPs. For the sake of simplicity I'll call this translation layer - 'Azure hidden NLB'.
 
 Consider the following scenario: A client with private IP 102.168.7.4 is talking to a server under 40.68.244.64.
 
@@ -22,6 +22,8 @@ What's going on here?
 The client sends packets from 192.168.7.4 (it's own IP) to the server under 40.68.244.64 (server's public IP), but from the server's point of view, it sees packets arriving from 52.233.140.16 (the client's public IP) destined into 172.16.1.4 (it's own private IP). Azure hidden NLB has mangled with the traffic so that it will all work seamlesly.
 
 One thing to keep in mind is that Azure knows which public IP is associated with which NIC, and when the outbound packet hits the Azure hidden NLB, the IP for translation must match the NIC to IP configuration in Azure. (following there's an example for this)
+
+You can read more on the subject here: [https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-outbound-connections)
 
 ## Why is this important to know?
 Here are some example where this behavior has actually hit me:
