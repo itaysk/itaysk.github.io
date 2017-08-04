@@ -5,8 +5,6 @@ categories: [Technical-Howto]
 tags: [azure-network, ftp]
 ---
 
-(I'd like to thank [Shay Shahak](https://www.linkedin.com/in/shay-shahak-35a46213/) for helping me write this post)
-
 Ever created a VM in Azure and noticed that the VM only knows about its private IP address even though it might have a public IP as well?  
 This behavior is actually by design, which might surprise people with traditional networking background.
 
@@ -52,3 +50,7 @@ Obviously this behavior makes any kind of tracing and monitoring network traffic
 
 ### Firewalling
 Another point to consider is if you'd expect external traffic arriving at a designated NIC so that you can apply filtering rules on it. The simple workaround is to apply the rules on the same single NIC but rewrite their matching logic to be more specific to catch only external traffic. Alternatively you could have multiple NICs.
+
+
+
+(I'd like to thank [Shay Shahak](https://www.linkedin.com/in/shay-shahak-35a46213/) for helping me write this post)
