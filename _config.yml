@@ -27,6 +27,8 @@ sass:
 gems:
     - jekyll-gist 
     - jekyll-feed
+
+plugins:
     - jekyll-redirect-from
 
 #services
