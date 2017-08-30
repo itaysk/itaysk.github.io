@@ -27,6 +27,7 @@ sass:
 gems:
     - jekyll-gist 
     - jekyll-feed
+    - jekyll-redirect-from
 
 #services
 google_analytics: "UA-85195702-1"
