@@ -12,4 +12,4 @@ YouTube: [https://youtu.be/itf3RB8fVM0](https://youtu.be/itf3RB8fVM0)
 
 SlideShare: [https://www.slideshare.net/itaysk/history-of-linux-and-unix](https://www.slideshare.net/itaysk/history-of-linux-and-unix)
 
-[![watch on youtube](/images/2017-11-03-history-of-linux-and-unix_1.png)](https://youtu.be/itf3RB8fVM0)
+[![watch on youtube](/images/2017-11-04-history-of-linux-and-unix_1.png)](https://youtu.be/itf3RB8fVM0)
