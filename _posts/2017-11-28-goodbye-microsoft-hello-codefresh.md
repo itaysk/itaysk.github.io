@@ -23,6 +23,6 @@ My role in Codefresh will be a fusion of: Product envisioning and strategy, Tech
 
 Thank you Microsoft for a wonderful era in my life, and here's to a new "fresh" start :)
 
-![cheers](/images/2017-11-26-goodbye-microsoft-hello-codefresh_1.gif)
+![cheers](/images/2017-11-28-goodbye-microsoft-hello-codefresh_1.gif)
 
 
