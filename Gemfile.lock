@@ -213,6 +213,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-redirect-from
+  jekyll-seo-tag
 
 RUBY VERSION
    ruby 2.4.2p198

@@ -19,17 +19,20 @@ author_twitter: "itaysk"
 author_linkedin: "itaysk"
 author_github:  "itaysk"
 
+#this is for seo plugin
+twitter:
+  username: itaysk
+
 # Build settings
 markdown: kramdown
 sass:
     style: :compressed
 
-gems:
-    - jekyll-gist 
-    - jekyll-feed
-
 plugins:
     - jekyll-redirect-from
+    - jekyll-seo-tag
+    - jekyll-gist 
+    - jekyll-feed
 
 #services
 google_analytics: "UA-85195702-1"
