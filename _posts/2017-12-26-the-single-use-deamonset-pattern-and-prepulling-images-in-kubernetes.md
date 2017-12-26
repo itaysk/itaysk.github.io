@@ -41,33 +41,6 @@ I guess you can call this pattern a workaround, but it's a useful trick for scen
 
 The end result is shared here: [https://gist.github.com/itaysk/7bc3e56d69c4d72a549286d98fd557dd](https://gist.github.com/itaysk/7bc3e56d69c4d72a549286d98fd557dd)
 
-```yaml
-apiVersion: apps/v1beta2
-kind: DaemonSet
-metadata:
-  name: prepull
-spec:
-  selector:
-    matchLabels:
-      name: prepull 
-  template:
-    metadata:
-      labels:
-        name: prepull 
-    spec:
-      initContainers:
-      - name: prepull 
-        image: docker
-        command: ["docker", "pull", "hello-world"]
-        volumeMounts:
-        - name: docker
-          mountPath: /var/run
-      volumes:
-      - name: docker
-        hostPath:
-          path: /var/run
-      containers:
-      - name: pause
-        image: gcr.io/google_containers/pause
-```
+{% gist 7bc3e56d69c4d72a549286d98fd557dd %}
+
 You can just `kubectl create` it, and it will make sure your 'hello-world' pod is pulled into every node in the cluster.
