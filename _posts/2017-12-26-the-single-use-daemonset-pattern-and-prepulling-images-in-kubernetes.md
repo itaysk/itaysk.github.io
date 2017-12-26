@@ -1,5 +1,5 @@
 ---
-title: The single use DeamonSet pattern and pre-pulling images in Kubernetes 
+title: The single use DaemonSet pattern and pre-pulling images in Kubernetes 
 date: 2017-12-26 10:00
 categories: [Technical-Howto]
 tags: [kubernetes, docker]
