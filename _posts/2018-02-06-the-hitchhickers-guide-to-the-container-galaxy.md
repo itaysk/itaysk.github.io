@@ -84,4 +84,8 @@ Another interesting CRI implementation if 'CRI-O' (CRI+OCI, originally called 'O
 
 ## Summary
 
+Let's recap and take another look at the map we started with:
+
+![timeline](/images/2018-02-06-the-hitchhickers-guide-to-the-container-galaxy_1.png)
+
 The past few years have been super interesting for anyone who is into containers, but also super confusing. I hope that this post helped clarify some of the terms you might have heard and recalled "I know this has something to do with containers, but I'm not sure exactly how it relates to X/Y". One thing's for sure, the future is bright and intriguing.
