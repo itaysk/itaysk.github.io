@@ -33,7 +33,7 @@ Some interesting pointers at:
 - statusBarItem.activeBackground
 - editorGroup.border
 
-Note that for the `statusBarItem.activeBackground` style, there's a transparancy factor. Since tmux doesn't support colors with alpha channel, I found the matching opaque color hex for that shade.
+Note that for the `statusBarItem.activeBackground` style, there's a transparency factor. Since tmux doesn't support colors with alpha channel, I found the matching opaque color hex for that shade.
 
 There's also the ANSI basic colors palette which is redefined at:
 
@@ -51,7 +51,7 @@ tmux has some nice configuration options around it's look and feel. Just search 
 - window-status
 - window-status-current
 
-Remember that the terminal is 256 colors, so using a hex color will make tmux approximate the closest avilable color. Eventually I preferred to pick colors by hand. I did consult [hexterm](https://www.npmjs.com/package/hexterm), and some other tools, but eventually resorted to this [256 color map](https://i.stack.imgur.com/e63et.png) and picked the colors that looked good to my eye.
+Remember that the terminal is 256 colors, so using a hex color will make tmux approximate the closest available color. Eventually I preferred to pick colors by hand. I did consult [hexterm](https://www.npmjs.com/package/hexterm), and some other tools, but eventually resorted to this [256 color map](https://i.stack.imgur.com/e63et.png) and picked the colors that looked good to my eye.
 
 {% gist 6957eab43957c83f56554ffdcced4100 vscode.tmux.conf %}
 
@@ -59,10 +59,8 @@ Remember that the terminal is 256 colors, so using a hex color will make tmux ap
 
 ## iTerm2
 
-For iterm it's a plist xml. I created a very simple script to convert the hex colors to RGB values, and built the XML:
+For iterm it's a plist xml. I created a very simple script to convert the hex colors to RGB values, and build the XML:
 
 {% gist 6957eab43957c83f56554ffdcced4100 vscode.itermcolors %}
 
 (load that from iTerm2 Preferences->Profiles->Colors->Color Presets...->Import...)
-
-
