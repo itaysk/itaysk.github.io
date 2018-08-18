@@ -3,7 +3,6 @@ title: The single use DaemonSet pattern and pre-pulling images in Kubernetes
 date: 2017-12-26 10:00
 categories: [Technical-Howto]
 tags: [kubernetes, docker]
-canonical_url: https://codefresh.io/blog/single-use-daemonset-pattern-pre-pulling-images-kubernetes/ 
 ---
 
 I was asked to find a way to pre-pull Docker images into Kubernetes nodes. Meaning that when a pod is scheduled to run on a node, the relevant Docker image will already be on that node instead of being pulled at time of deployment. This can be useful in cases where the image is big, and pods are recreated often (for example in a scale out scenario).
