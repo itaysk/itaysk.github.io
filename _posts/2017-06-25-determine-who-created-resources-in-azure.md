@@ -30,11 +30,11 @@ Now we can use the Log Analytics search to find the first action on the resource
 
 Here is an example query:
 
-{% gist itaysk/25c846b1461fa6e81399601b2ca2fa70#file-query-kusto %}
+{% gist itaysk/25c846b1461fa6e81399601b2ca2fa70 file-query-kusto %}
 
 (The post originally published with the following query written in the legacy OMS query language. I'm keeping it here for reference:)
 
-{% gist itaysk/25c846b1461fa6e81399601b2ca2fa70#file-legacy-query-oms %}
+{% gist itaysk/25c846b1461fa6e81399601b2ca2fa70 file-legacy-query-oms %}
 
 ## Approach 3: Automatic tagging
 If you need the ownership data more accessible, another approach will be to capture this information in tags that are easily accessible for every resource.  
