@@ -7,7 +7,7 @@ tags: [kubernetes, prometheus, cloud]
 
 This post explores the current state of metrics and monitoring in Kubernetes by sharing my experience it progressed.
 
-# Recap
+## Recap
 
 I don't want to spend too much time on history, so here's a quick recap of recent events in this domain:
 
@@ -24,7 +24,7 @@ I don't want to spend too much time on history, so here's a quick recap of recen
 
 The purpose of this post is not to dive into the above mentioned concepts, but to help you understand the big picture; how they and other projects you may have encountered in this space fit together and to what end.
 
-# Basic Kubernetes setup
+## Basic Kubernetes setup
 
 So based on the recap, and based on most guides/tutorials you would find, a standard monitoring and core metrics pipeline for Kubernetes will look something like this:
 
@@ -36,7 +36,7 @@ So based on the recap, and based on most guides/tutorials you would find, a stan
 2. We also have Prometheus as a monitoring solution.
 3. There may be additional Prometheus exporters in use.
 
-# Basic + Cloud
+## Basic + Cloud
 
 More often than not, our Kubernetes cluster is part of a larger environment which is monitored independently. For example: we use a managed kubernetes service in a cloud platform, our cloud environment has many other components (or entirely different systems) so we have been using the cloud provided monitoring solution to monitor our cloud environment. At this point we have two separate monitoring systems.
 
@@ -52,7 +52,7 @@ Our monitoring pipeline now looks like this:
 2. We also use the cloud provided monitoring solution.
 3. We have a metrics adapter that exposes additional cloud metrics through the Kubernetes metrics API.
 
-# Cloud Centric
+## Cloud Centric
 
 If we have a good monitoring tool in our cloud that we already use to monitor our cloud environment, can't just use it to monitor Kubernetes as well? Can we replace Prometheus with the cloud provided monitoring tool? The answer depends on the monitoring tool in question but it's reasonable to expect your tool to be able to monitor Kubernetes, many tools does that. So generally the answer is yes, you could replace Prometheus with your existing monitoring tool, and consolidate your concerns into a single tool.
 
@@ -69,7 +69,7 @@ If there were such Cloud Centric monitoring solution for Kubernetes it would wor
 3. We use our cloud provider monitoring solution exclusively.
 4. There's a metrics adapter in the cluster that exposes all required metrics through the Kubernetes metrics API.
 
-# Prometheus centric
+## Prometheus centric
 
 What if instead of merging Prometheus into the cloud monitoring, we merge the cloud monitoring into Prometheus? We probably still need the cloud monitoring system to collect the cloud services metrics in the first place because of the way things are wired in the cloud, but we sure can import those metrics into Prometheus! Prometheus exporters are abundant and it's reasonable to expect to find one that export your cloud metrics of choice.  
 Does this mean you can forget about the cloud monitoring solution and use Prometheus exclusively? Probably not, but I do believe that it is possible to reach a state where most of your time is spent in Prometheus and the cloud monitoring solution is only occasionally used.
@@ -86,11 +86,11 @@ So in this scenario our setup looks like this:
 2. We use Prometheus for monitoring.
 3. k8s-prometheus-adapter exposes all required Prometheus metrics through the Kubernetes metrics API.
  
-# Summary
+## Conclusion
 
 I would like to see how the new monitoring and metrics pipelines evolve in Kubernetes, and the industry. Currently things are still taking shape, and from the options presented here, I think that the Prometheus Centric approach make the most sense. It allows me to use Prometheus as a monitoring solution (which is a good thing given it's prominent place in the Kubernetes ecosystem), while at the same time provides the simplest architecture for supporting Kubernetes core metrics pipeline.
 
-# Notes
+## Notes
 
  - The case for cloud provider monitoring solution is relevant for other SaaS monitoring solutions(think DataDog).
  - The case for cloud provider service dependency is relevant for external services (think MLab managed MongoDB)
