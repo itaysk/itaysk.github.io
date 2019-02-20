@@ -5,7 +5,7 @@ categories: [Technical-Howto]
 tags: [kubernetes, prometheus, cloud]
 ---
 
-This post explores the current state of metrics and monitoring in Kubernetes by sharing my experience it progressed.
+This post explores the current state of metrics and monitoring in Kubernetes by walking through the gradual thought process that I experienced when learning this topic.
 
 ## Recap
 
