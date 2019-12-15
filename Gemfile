@@ -6,6 +6,7 @@ ruby RUBY_VERSION
 gem 'github-pages', group: :jekyll_plugins
 gem 'jekyll-redirect-from', group: :jekyll_plugins
 gem 'jekyll-seo-tag'
+gem 'jekyll-feed'
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do

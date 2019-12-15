@@ -17,7 +17,7 @@ This post is my attempt to list and define those common deployment strategies, w
 
 There are probably other names and terms you expected to see on this list. I'd argue that those "missing" terms can be seen as variants of these primary strategies.
 
-And one final note before we begin: this post is about definitions, methodologies and approaches and not about how to implement them in any technology stack. A technical tutorial will follow in another post. Stay tuned!
+And one final note before we begin: this post is about definitions, methodologies and approaches and not about how to implement them in any technology stack. A technical tutorial will follow in another post. Stay tuned!
 
 ## Reckless Deployment
 a.k.a: Highlander, Simple
