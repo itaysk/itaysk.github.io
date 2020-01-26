@@ -1,5 +1,5 @@
 ---
-title: Speaking at CNCF TLV meetup Jan 2020
+title: Speaking at CNCF TLV meetup
 date: 2020-01-26 10:40
 categories: [Events]
 ---
