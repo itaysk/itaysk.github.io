@@ -5,7 +5,7 @@ categories: [Technical-Howto]
 tags: [go, linux]
 ---
 
-When building [Tracee](), I wanted to embed the ebpf program file into the compiled binary artifact. This file is essentially an asset that is required by the program, which will look for it at runtime in a predefined path. I wanted to simplify the distribution of Tracee, and ship a single binary that includes this asset file as an embedded resource.  
+When building [Tracee](https://github.com/aquasecurity/tracee), I wanted to embed the ebpf program file into the compiled binary artifact. This file is essentially an asset that is required by the program, which will look for it at runtime in a predefined path. I wanted to simplify the distribution of Tracee, and ship a single binary that includes this asset file as an embedded resource.  
 I have researched a few options for embedding embedding resources into a standalone binary artifact and wanted to share my learnings here. I will not attempt to compare tools or recommend any specific one, but just outline the technical approaches for embedding resources in binaries. 
 
 Note that this was done in the context of Tracee, which is based on Go and Linux, so the techniques are very specific to my use case. However, I think once you understand the general approaches, you can find comparable implementations of the same ideas for your environments as well.
@@ -88,7 +88,7 @@ One of the Go native embedding tools that I looked at - [GeertJohan/go.rice](htt
 
 So far we have discussed several approaches to embed data in your binary. After you choose one, and find the tools to help you implement it, you probably want to integrate the solution into your build workflow. Let's consider some options:
 
-#### Makefile
+### Makefile
 Makefile is the classic way to automate build tools. A simple make build target can look something like:
 
 ```makefile
@@ -98,7 +98,7 @@ build:
   mytool-after # e.g. tool that manipulates the binary
 ```
 
-#### GoReleaser
+### GoReleaser
 [GoReleaser](https://goreleaser.com/) is a popular tool to build and release Go projects. It is has some customization options that you can use like passing custom flags to the go build command, setting environment variables, calling tools before and after the build, etc.
 
 ```yaml
@@ -109,7 +109,7 @@ builds:
       post: mytool-after # e.g. tool that manipulates the binary
 ```
 
-#### Go generate
+### Go generate
 
 We mentioned go generate in previous example but it's worth mentioning again here because go generate is just a calling convention. Any approach that relies on generating source files can be integrated using go generate.  
 In your application Go source code include a comment like:
@@ -120,5 +120,5 @@ In your application Go source code include a comment like:
 
 Then, when you run the `go generate` command, it will invoke the tool for you. You can run `go generate` in your makefile, or goreleaser pre hook for example. The benefit of using go generate over calling the tool directly is that it's a universal and consistent way that is common and familiar with Go developers. In addition, having the generation command in the source code, alongside the code that relies on it makes it easier to maintain and is self-documented. When I reviewed tools in the code generation category it was rare to see anyone that advise or demonstrate the use with `go generate`, which is unfortunate in my opinion.
 
-#### Custom build command
+### Custom build command
 Some tools (e.g [packr](https://github.com/gobuffalo/packr)) strayed further from conventions by promoting you replace your entire Go build with their own tool which wraps `go build` and adds code generation. Personally I can't relate to this approach but luckily you can also use these tools in "regular" mode where you choose how to integrate them into your workflow.
