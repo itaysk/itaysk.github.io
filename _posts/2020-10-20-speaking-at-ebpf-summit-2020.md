@@ -9,6 +9,6 @@ I will be speaking at the [eBPF Summit](https://ebpf.io/summit-2020) virtual eve
 
 Here are the details:
 
-Dynamic Image Scanning Through System Tracing
+Tracing and detecting malware using eBPF
 
 In this talk we present how we use eBPF to trace container images in a sandbox, in order to detect malicious behavior that might appear later at runtime. We will present an open source tool that we have built for that task, and how we analyze the system level activity to produce applicative security insights.
