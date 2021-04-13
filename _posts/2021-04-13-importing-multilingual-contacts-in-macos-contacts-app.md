@@ -15,11 +15,11 @@ In Outlook.com, you can export your contacts, but only to CSV. Not the best form
 
 I have found that the MacOS "Contacts" app has a customizable import feature. You can load the csv, and map fields into contact cards. That sounds promising! but:
 
+![gibberish](/images/2021-04-13-importing-multilingual-contacts-in-macos-contacts-app_1.png)
+
 As you can see there's something wrong with encoding. I have some Hebrew text in my contacts, which got messed up in translation.
 
 My initial suspicion was the origin file encoding, but the CSV is using UTF-8 which is supposed to be good:
-
-![gibberish](/images/2021-04-13-importing-multilingual-contacts-in-macos-contacts-app_1.png)
 
 ```bash
 ❯ file -I contacts.csv
